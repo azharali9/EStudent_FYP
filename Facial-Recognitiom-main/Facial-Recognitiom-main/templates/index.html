@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition App</title>
+</head>
+<body>
+    <h1>Welcome to the Face Recognition App</h1>
+    <form action="/read_faces" method="post">
+        <label for="user_name">Enter your name (in the format "firstname_lastname"):</label>
+        <input type="text" id="user_name" name="user_name" required>
+        <button type="submit">Start Face Reading</button>
+    </form>
+
+    <hr>
+
+    <h2>Recognize Faces</h2>
+    <p>Click the button below to start recognizing faces.</p>
+    <a href="/recognize_faces" target="_blank">
+        <button type="button">Recognize Faces</button>
+    </a>
+</body>
+</html>
